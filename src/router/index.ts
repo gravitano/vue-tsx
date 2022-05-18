@@ -1,6 +1,7 @@
 import { CounterPage } from '@/views/counter';
 import { Home } from '@/views/home';
 import { createRouter, createWebHistory } from 'vue-router';
+import Login from '@/views/login';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,6 +15,11 @@ const router = createRouter({
       path: '/counter',
       name: 'counter',
       component: CounterPage,
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login,
     },
   ],
 });
